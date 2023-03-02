@@ -19,6 +19,7 @@ color shoppi_pink_01
 color shoppi_pink_02
 color shoppi_purple
 color shoppi_white
+drawable ic_gnb_back
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable img_pdp_top_01
