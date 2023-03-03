@@ -15,7 +15,7 @@
     <uses-permission android:name="com.shoppi.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:debuggable="true"
@@ -28,7 +28,11 @@
         android:theme="@style/Theme.Shoppiandroid" >
         <activity
             android:name="com.shoppi.app.MainActivity"
-            android:exported="true" >
+            android:exported="false" />
+        <activity
+            android:name="com.shoppi.app.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Shoppiandroid.Splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
