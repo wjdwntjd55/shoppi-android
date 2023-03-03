@@ -2713,6 +2713,7 @@ int drawable abc_textfield_search_material 0x7f070076
 int drawable abc_vector_test 0x7f070077
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
+int drawable background_splash_screen 0x7f0700e1
 int drawable btn_checkbox_checked_mtrl 0x7f07007a
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007b
 int drawable btn_checkbox_unchecked_mtrl 0x7f07007c
@@ -2741,6 +2742,7 @@ int drawable ic_mtrl_chip_checked_black 0x7f070091
 int drawable ic_mtrl_chip_checked_circle 0x7f070092
 int drawable ic_mtrl_chip_close_circle 0x7f070093
 int drawable ic_search_black_24 0x7f070094
+int drawable img_logo 0x7f0700e2
 int drawable img_pdp_top_01 0x7f0700df
 int drawable m3_appbar_background 0x7f070095
 int drawable m3_avd_hide_password 0x7f070096
@@ -2914,6 +2916,7 @@ int id bounce 0x7f08005e
 int id bounceBoth 0x7f08005f
 int id bounceEnd 0x7f080060
 int id bounceStart 0x7f080061
+int id btn_enter_product_detail 0x7f0801fc
 int id buttonPanel 0x7f080062
 int id cache_measures 0x7f080063
 int id callMeasure 0x7f080064
@@ -2941,6 +2944,7 @@ int id compress 0x7f080079
 int id confirm_button 0x7f08007a
 int id constraint 0x7f08007b
 int id container 0x7f08007c
+int id container_main 0x7f0801fd
 int id content 0x7f08007d
 int id contentPanel 0x7f08007e
 int id contiguous 0x7f08007f
@@ -3425,7 +3429,6 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_main 0x7f0b001c
-int layout activity_product_detail 0x7f0b006a
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
 int layout design_bottom_sheet_dialog 0x7f0b001f
@@ -3442,6 +3445,8 @@ int layout design_navigation_menu 0x7f0b0029
 int layout design_navigation_menu_item 0x7f0b002a
 int layout design_text_input_end_icon 0x7f0b002b
 int layout design_text_input_start_icon 0x7f0b002c
+int layout fragment_home 0x7f0b006b
+int layout fragment_product_detail 0x7f0b006c
 int layout m3_alert_dialog 0x7f0b002d
 int layout m3_alert_dialog_actions 0x7f0b002e
 int layout m3_alert_dialog_title 0x7f0b002f
@@ -4306,6 +4311,7 @@ int style Theme_MaterialComponents_Light_NoActionBar_Bridge 0x7f10025f
 int style Theme_MaterialComponents_NoActionBar 0x7f100260
 int style Theme_MaterialComponents_NoActionBar_Bridge 0x7f100261
 int style Theme_Shoppiandroid 0x7f100262
+int style Theme_Shoppiandroid_Splash 0x7f100465
 int style ThemeOverlay_AppCompat 0x7f100263
 int style ThemeOverlay_AppCompat_ActionBar 0x7f100264
 int style ThemeOverlay_AppCompat_Dark 0x7f100265

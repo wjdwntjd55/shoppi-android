@@ -19,10 +19,14 @@ color shoppi_pink_01
 color shoppi_pink_02
 color shoppi_purple
 color shoppi_white
+drawable background_splash_screen
 drawable ic_gnb_back
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable img_logo
 drawable img_pdp_top_01
+id btn_enter_product_detail
+id container_main
 id iv_product_detail_image
 id iv_product_thumbnail
 id toolbar_product_detail
@@ -34,7 +38,8 @@ id tv_product_discount_rate
 id tv_product_price
 id view_divider_product
 layout activity_main
-layout activity_product_detail
+layout fragment_home
+layout fragment_product_detail
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
@@ -73,5 +78,6 @@ style TextSubtitle3
 style TextSubtitle3.Bold
 style TextSubtitle3.Grey03
 style Theme.Shoppiandroid
+style Theme.Shoppiandroid.Splash
 xml backup_rules
 xml data_extraction_rules
