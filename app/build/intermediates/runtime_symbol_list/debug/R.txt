@@ -2934,6 +2934,7 @@ int id action_bar_title 0x7f080039
 int id action_container 0x7f08003a
 int id action_context_bar 0x7f08003b
 int id action_divider 0x7f08003c
+int id action_home_to_product_detail 0x7f080205
 int id action_image 0x7f08003d
 int id action_menu_divider 0x7f08003e
 int id action_menu_presenter 0x7f08003f
@@ -3191,6 +3192,7 @@ int id navigation_category 0x7f08013a
 int id navigation_header_container 0x7f08013b
 int id navigation_home 0x7f08013c
 int id navigation_main 0x7f08013d
+int id navigation_product_detail 0x7f080206
 int id never 0x7f08013e
 int id neverCompleteToEnd 0x7f08013f
 int id neverCompleteToStart 0x7f080140

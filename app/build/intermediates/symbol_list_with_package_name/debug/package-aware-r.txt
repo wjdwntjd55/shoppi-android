@@ -2935,6 +2935,7 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
+id action_home_to_product_detail
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -3192,6 +3193,7 @@ id navigation_category
 id navigation_header_container
 id navigation_home
 id navigation_main
+id navigation_product_detail
 id never
 id neverCompleteToEnd
 id neverCompleteToStart

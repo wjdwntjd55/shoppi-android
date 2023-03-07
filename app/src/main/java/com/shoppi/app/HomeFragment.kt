@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 
 class HomeFragment:Fragment() {
 
@@ -30,9 +31,10 @@ class HomeFragment:Fragment() {
             //  - beginTransaction() : Transaction 객체를 반환
             //  - commit() : Transaction 이 실행하기 위해서는 반드시 선언해줘야한다
 
-            val transaction = parentFragmentManager.beginTransaction()
+            /*val transaction = parentFragmentManager.beginTransaction()
             transaction.add(R.id.container_main, ProductDetailFragment())
-            transaction.commit()
+            transaction.commit()*/
+            findNavController().navigate(R.id.action_home_to_product_detail)
 
         }
     }

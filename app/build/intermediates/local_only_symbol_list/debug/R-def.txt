@@ -34,6 +34,7 @@ drawable img_pdp_top_01
 drawable selector_cart_icon
 drawable selector_category_icon
 drawable selector_home_icon
+id action_home_to_product_detail
 id btn_enter_product_detail
 id container_main
 id iv_product_detail_image
@@ -43,6 +44,7 @@ id navigation_cart
 id navigation_category
 id navigation_home
 id navigation_main
+id navigation_product_detail
 id toolbar_product_detail
 id tv_product_brand_label
 id tv_product_brand_name
