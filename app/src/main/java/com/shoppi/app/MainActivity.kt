@@ -17,16 +17,15 @@ class MainActivity : AppCompatActivity() {
         // 선택된 아이콘의 그라데이션이 작동이 안되어서 itemIconTintList = null 을 함
         bottomNavigationView.itemIconTintList = null
 
-
-        // NavHost 프래그먼트에 내부컨트롤러에 대한 참조를 가져와야한다
-        // 먼저, NavHost 프래그먼트에 대한 참조가 필요한다
-        // NavHost 프래그먼트는 findNavController() 라는 메소드를 지원한다
-        // findNavController() : NavHost 프래그먼트가 소유하고 있는 내부컨트롤러에 대한 참조를 반환해준다
+        // NavHostFragment 에 내부컨트롤러에 대한 참조를 가져와야한다
+        // 먼저, NavHostFragment 에 대한 참조가 필요한다
+        // NavHostFragment 는 findNavController() 라는 메소드를 지원한다
+        // - findNavController() : NavHostFragment 가 소유하고 있는 내부컨트롤러에 대한 참조를 반환해준다
         val navController = supportFragmentManager.findFragmentById(R.id.container_main)?.findNavController()
         navController?.let {
             bottomNavigationView.setupWithNavController(it)
-            // setupWithNavController : 바텀네비게이션 뷰와 프래그먼트 컨테니어 뷰의 NavHost 프래그먼트 연결하게 해준다
-            // - NavController : NavHost 프래그먼트에서 데스트네이션의 이동을 관리하는 객체
+            // setupWithNavController : BottomNavigationView 와 FragmentContainerView의 NavHostFragment 를 연결하게 해준다
+            // - NavController : NavHostFragment 에서 데스트네이션의 이동을 관리하는 객체
             // 즉, 화면이동을 관리하는 내부컨트롤러 객체를 바텀 내비게이션뷰에 할당할 수 있게 진원함으로서, 바텀내비게인션뷰의 아이템을 클릭했을 때, 화면이동이 이루어질 수 있도록 해줌
         }
 
