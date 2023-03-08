@@ -2974,7 +2974,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btn_enter_product_detail
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3077,6 +3076,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3351,6 +3351,8 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar_home_icon
+id toolbar_home_title
 id toolbar_product_detail
 id top
 id topPanel

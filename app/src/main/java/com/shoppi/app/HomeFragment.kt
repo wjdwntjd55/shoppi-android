@@ -6,8 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.GridView
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.bumptech.glide.Glide
 import org.json.JSONObject
 
 class HomeFragment:Fragment() {
@@ -23,7 +27,7 @@ class HomeFragment:Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val button = view.findViewById<Button>(R.id.btn_enter_product_detail)
+        /*val button = view.findViewById<Button>(R.id.btn_enter_product_detail)
         button.setOnClickListener {
 
             // FragmentManager : Fragment 를 추가, 삭제, 교체를 담당한다
@@ -38,7 +42,10 @@ class HomeFragment:Fragment() {
             transaction.commit()*/
             findNavController().navigate(R.id.action_home_to_product_detail)
 
-        }
+        }*/
+
+        val toolbarTitle = view.findViewById<TextView>(R.id.toolbar_home_title)
+        val toolbarIcon = view.findViewById<ImageView>(R.id.toolbar_home_icon)
 
         val assetLoader = AssetLoader()
         val homeData = assetLoader.getJsonString(requireContext(), "home.json")
@@ -56,8 +63,12 @@ class HomeFragment:Fragment() {
             val text = title.getString("text")
             val iconUrl = title.getString("icon_url")
 
-            val titleValue = Title(text, iconUrl)
-            titleValue.text
+            toolbarTitle.text = text
+
+            // Glide 사용
+            Glide.with(this)
+                .load(iconUrl)
+                .into(toolbarIcon)
 
             // array 타입에 접근할려면 getJSONArray 이용
             val topBanners = jsonObject.getJSONArray("top_banners")
