@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import org.json.JSONObject
 
 class HomeFragment:Fragment() {
 
@@ -44,6 +45,33 @@ class HomeFragment:Fragment() {
         Log.d("homeData", homeData ?: "")
 
 
+        // json 파일에서
+        // { } : JSONObject 로 반환 가능
+        // [ ] : JSONArray 로 반환 가능
+        if (!homeData.isNullOrEmpty()) {
+            // homeData 를 JSONObject 로 변환시킴
+            // JSONObject 로 만들고 나면, 값을 키로 조회가 가능해짐
+            val jsonObject = JSONObject(homeData)
+            val title = jsonObject.getJSONObject("title")
+            val text = title.getString("text")
+            val iconUrl = title.getString("icon_url")
+
+            val titleValue = Title(text, iconUrl)
+            titleValue.text
+
+            // array 타입에 접근할려면 getJSONArray 이용
+            val topBanners = jsonObject.getJSONArray("top_banners")
+            val firstBanner = topBanners.getJSONObject(0)
+            val label = firstBanner.getString("label")
+            val productDetail = firstBanner.getJSONObject("product_detail")
+            val price = productDetail.getInt("price")   // 102000
+
+            Log.d("title", "text=${text}, iconUrl=${iconUrl}")
+            Log.d("firstBanner", "label=${label}, price=${price}")
+
+
+
+        }
 
     }
 
